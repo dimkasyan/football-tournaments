@@ -1,0 +1,78 @@
+@import "../mixins/media";
+
+header {
+    position: relative;
+
+    img {
+        border-radius: 2em;
+    }
+
+    .football-current-score {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        position:absolute;
+        background: #FFFFFF;
+        border-radius: 20px 20px 0px 0px;
+        width: 51.6em;
+        height: 6.3em;
+        bottom: 0;
+        left: 6.75em;
+
+        @media(max-width: 1140px) {
+            width: 40em;
+            left: 9.75em;
+        }
+
+        @media(max-width: 1024px) {
+            width: 35em;
+            left: 9.75em;
+        }
+
+         @media(max-width: 950px) {
+            width: 30em;
+            left: 7.75em;
+        }
+
+        @media(max-width: 900px) {
+            left: 8.75em;
+        }
+
+        .left-opponent,  .rigth-opponent {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+
+            &-img {
+                width: 4em;
+                height: 4em;
+                justify-self: center;
+
+                @media(max-width: 1024px) {
+                    width: 3em;
+                    height: 3em;
+                }
+            }
+
+            &-name {
+                font-weight: bold;
+
+                @media(max-width: 1024px) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .score {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            font-weight: bold;
+            font-size: 36px;
+            justify-items: center;
+
+            @media(max-width: 1024px) {
+                font-size: 24px;
+            }
+        }
+    }
+}

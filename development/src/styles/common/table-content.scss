@@ -1,0 +1,65 @@
+.table-contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 2em 0 1em 0;
+  border-bottom: 1px solid #F4F5F6;
+
+  &-block,
+  &-filter {
+    display: grid;
+    align-items: center;
+  }
+
+  &-block {
+    grid-template-columns: 0.6fr 1fr;
+  }
+
+  &-filter {
+    grid-template-columns: 0.8fr 0.5fr;
+    grid-template-rows: 40px;
+    justify-items: end;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+  }
+
+  &-count {
+    &-score, &-game {
+        line-height:5.25em;
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &.active {
+          color: #B5B5C1;
+          border-bottom: 2px solid #74A133;
+        }
+    }
+  }
+
+  &-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &-status {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    justify-self: start;
+    color: #ffffff;
+    background: #74a233;
+    border-radius: 5px;
+    padding: 4px 14px;
+
+    &.completed {
+      color: #000000;
+      background: #F4F5F6;
+    }
+  }
+}

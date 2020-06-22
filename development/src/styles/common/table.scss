@@ -1,0 +1,77 @@
+.table {
+  &-form {
+    position: relative;
+  }
+
+  &-row {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr repeat(8, 5.8em);
+    transition: top 500ms;
+    -webkit-transition: top 500ms;
+
+    &.header {
+      color: #b5b5c1;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 22px;
+      padding: 1.75em 0 1em 0;
+    }
+
+    &__title {
+      align-self: center;
+      padding-left: 5em;
+
+      &-club {
+        align-self: center;
+        justify-self: start;
+      }
+    }
+
+    &__data {
+      justify-self: center;
+      align-self: center;
+    }
+
+    &__img {
+        background-size: contain;
+
+        &-block {
+            display: grid;
+            grid-template-columns:1fr 0.5fr;
+            position: relative;
+        }
+
+        &-cup {
+            display: none;
+            position: absolute;
+            align-self: end;
+            justify-self:center;
+            padding-left: 0.25em;
+
+            &.winner {
+                display: block;
+            }
+        }
+      }
+
+    &.card {
+      grid-template-columns: 5em 0.2fr 1fr repeat(8, 5.8em);
+      grid-template-rows: 4em;
+      align-items: center;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 22px;
+
+      &.sort {
+        position: absolute;
+        width: 100%;
+      }
+
+      &:nth-child(odd) {
+        background: #f4f5f7;
+        border-radius: 10px;
+      }
+    }
+  }
+}
