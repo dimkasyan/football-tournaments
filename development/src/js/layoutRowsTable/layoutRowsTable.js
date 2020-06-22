@@ -25,7 +25,7 @@ const layoutRowsTable = item => {
                         tag: `img`,
                         cls: `table-row__img-cup`,
                         attrs: {
-                            src: `../../img/cup.svg`
+                            src: `img/cup.svg`
                         }
                     }
                 ]
