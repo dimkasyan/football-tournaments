@@ -6,15 +6,15 @@
 const setImgCurrentComand = name => {
     switch (name) {
     case `Arsenal`:
-        return `../../img/Arsenal.svg`
+        return `img/Arsenal.svg`
     case `Chelsea`:
-        return `../../img/Chelsea.svg`
+        return `img/Chelsea.svg`
     case `Real Madrid`:
-        return `../../img/Real-madrid-c-f.svg`
+        return `img/Real-madrid-c-f.svg`
     case `San Paulo`:
-        return `../../img/Sao-paulo-f-c.svg`
+        return `img/Sao-paulo-f-c.svg`
     case `Zenit`:
-        return `../../img/Zenit.svg`
+        return `img/Zenit.svg`
 
     default:
         return ``
